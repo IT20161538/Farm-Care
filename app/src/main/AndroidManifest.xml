@@ -13,6 +13,15 @@
             android:name=".Harvest_Home"
             android:exported="true" />
         <activity
+            android:name=".FarmCareHome"
+            android:exported="true" />
+        <activity
+            android:name=".UserLogin"
+            android:exported="true" />
+        <activity
+            android:name=".EmployeeManagement"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>

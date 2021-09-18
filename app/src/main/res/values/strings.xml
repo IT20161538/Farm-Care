@@ -15,6 +15,4 @@
     <string name="et_signinpassword" />
     <string name="btn_signin">SIGN IN</string>
     <string name="btn_addimage">ADD IMAGE</string>
-    <string name="textView">Ravindu</string>
-    <string name="tv_harvesthome">Harvest Management</string>
 </resources>
