@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Farm Care</string>
+    <string name="tvsignin">Sign in</string>
+    <string name="tv_signinname">Name</string>
+    <string name="et_signinname" />
+    <string name="tv_signinEmail">Email</string>
+    <string name="et_signinemail" />
+    <string name="tv_signinphone">Phone</string>
+    <string name="et_signinphone" />
+    <string name="tv_signinlocation">Location</string>
+    <string name="tv_signinusername">Username</string>
+    <string name="tv_signinpassword">Password</string>
+    <string name="et_signinlocation" />
+    <string name="et_signinusername" />
+    <string name="et_signinpassword" />
+    <string name="btn_signin">SIGN IN</string>
+    <string name="btn_addimage">ADD IMAGE</string>
+</resources>
