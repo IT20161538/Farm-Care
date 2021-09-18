@@ -15,4 +15,9 @@
     <string name="et_signinpassword" />
     <string name="btn_signin">SIGN IN</string>
     <string name="btn_addimage">ADD IMAGE</string>
+    <string name="btn_employees">EMPLOYEE</string>
+    <string name="btn_checkSchedule">CHECK SCHEDULE</string>
+    <string name="btn_salary">SALARY</string>
+    <string name="tv_loginlable">Already have an account ?</string>
+    <string name="btnloginlable">LOGIN</string>
 </resources>
