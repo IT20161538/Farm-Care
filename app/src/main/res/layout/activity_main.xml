@@ -9,14 +9,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="379dp"
-        android:layout_height="633dp"
+        android:layout_width="392dp"
+        android:layout_height="628dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvsignin"
-        app:layout_constraintVertical_bias="0.191"
+        app:layout_constraintVertical_bias="0.304"
         app:srcCompat="@drawable/backgroundlogin" />
 
     <TextView
@@ -210,14 +210,14 @@
         android:id="@+id/btn_signin"
         android:layout_width="118dp"
         android:layout_height="51dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="64dp"
         android:backgroundTint="@color/teal_700"
         android:text="@string/btn_signin"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -236,7 +236,7 @@
         android:id="@+id/btnloginlable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="52dp"
+        android:layout_marginEnd="56dp"
         android:backgroundTint="#586BCF"
         android:text="@string/btnloginlable"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_loginlable"
@@ -247,12 +247,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="44dp"
         android:text="@string/tv_loginlable"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnloginlable"
-        app:layout_constraintHorizontal_bias="0.263"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

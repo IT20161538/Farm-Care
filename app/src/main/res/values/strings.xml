@@ -15,9 +15,34 @@
     <string name="et_signinpassword" />
     <string name="btn_signin">SIGN IN</string>
     <string name="btn_addimage">ADD IMAGE</string>
+    <string name="tv_cropharvest">Harvest(Crop)</string>
+    <string name="btn_cropcompare">Compare</string>
+    <string name="btn_cropaddnew">Add New</string>
+
+    <string name="tv_animalharvest">Harvest(Animal)</string>
+    <string name="btn_animalcompare">Compare</string>
+    <string name="btn_animaladdnew">Add New</string>
     <string name="btn_employees">EMPLOYEE</string>
     <string name="btn_checkSchedule">CHECK SCHEDULE</string>
     <string name="btn_salary">SALARY</string>
     <string name="tv_loginlable">Already have an account ?</string>
     <string name="btnloginlable">LOGIN</string>
+    <string name="btn_animaledit">Edit</string>
+    <string name="btn_animaldelete">Delete</string>
+    <string name="tv_animaltype">Animal Type</string>
+    <string name="tv_producttype">Product Type</string>
+    <string name="tv_section">Section</string>
+    <string name="tv_date">Date</string>
+    <string name="tv_amount">Amount</string>
+    <string name="tv_addanimaltype">Animal Type</string>
+
+    <string name="tv_addanimalproducttype">Product Type</string>
+    <string name="tv_addanimalsection">Section</string>
+    <string name="tv_addanimaldate">Date</string>
+    <string name="tv_addanimalamount">Amount</string>
+    <string name="et_addanimalhardata" />
+    <string name="et_addanimalproducttype" />
+    <string name="et_addanimalsectiondata" />
+    <string name="et_addanimaldatedata" />
+    <string name="et_addanimalamountdata" />
 </resources>

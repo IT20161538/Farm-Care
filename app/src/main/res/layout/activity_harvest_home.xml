@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.105" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/im_userprofile"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginTop="4dp"
@@ -29,28 +29,75 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/userprofile2" />
 
+    <TextView
+        android:id="@+id/tv_harvesthome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/teal_700"
+        android:fontFamily="sans-serif"
+        android:text="Harvest Management"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/im_userprofile"
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imageView5"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/ic_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:srcCompat="@drawable/vegetables" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:layout_marginBottom="132dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ingredients" />
+
+    <Button
+        android:id="@+id/btn_crop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:text="Crops"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/btn_animalproducts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:text="Animal Products"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/imageView12"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/house" />
+        app:srcCompat="@drawable/ic_home" />
 
-    <TextView
-        android:id="@+id/tv_harvesthome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:background="@color/teal_700"
-        android:fontFamily="sans-serif"
-        android:text="Harvest Management"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

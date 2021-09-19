@@ -10,7 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fame_Care">
         <activity
+            android:name=".AddAnimalHarvest"
+            android:exported="true" />
+        <activity
             android:name=".AddEmployeeDetails"
+            android:exported="true" />
+        <activity
+            android:name=".AnimalHarvest"
+            android:exported="true" />
+        <activity
+            android:name=".CropHarvest"
             android:exported="true" />
         <activity
             android:name=".Harvest_Home"
