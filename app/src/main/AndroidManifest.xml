@@ -13,6 +13,15 @@
             android:name=".AddAnimalHarvest"
             android:exported="true" />
         <activity
+            android:name=".AddEmployeeSalary"
+            android:exported="true" />
+        <activity
+            android:name=".AddWorkSchedule"
+            android:exported="true" />
+        <activity
+            android:name=".EmployeeDetails"
+            android:exported="true" />
+        <activity
             android:name=".AddEmployeeDetails"
             android:exported="true" />
         <activity

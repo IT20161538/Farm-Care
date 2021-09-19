@@ -44,7 +44,7 @@
         android:layout_width="191dp"
         android:layout_height="36dp"
         android:background="@color/design_default_color_secondary_variant"
-        android:text="@string/tv_cropharvest"
+        android:text="Harvest(Crop)"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="24sp"
@@ -62,7 +62,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#004A4A"
-        android:text="@string/btn_cropcompare"
+        android:text="COMPARE"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView12" />
 
@@ -72,7 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#004A4A"
-        android:text="@string/btn_cropaddnew"
+        android:text="ADD NEW"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn_cropcompare"
         app:layout_constraintEnd_toEndOf="parent" />
 
