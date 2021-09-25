@@ -59,8 +59,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="#004A4A"
         android:text="COMPARE"
+        app:layout_constraintBottom_toTopOf="@+id/animalharvest_list"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView12" />
 
@@ -74,32 +76,11 @@
         app:layout_constraintBaseline_toBaselineOf="@+id/btn_animalcompare"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/btn_animaledit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        android:text="@string/btn_animaledit"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btn_animaldelete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        android:text="@string/btn_animaldelete"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btn_animaledit"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <ListView
         android:id="@+id/animalharvest_list"
-        android:layout_width="414dp"
-        android:layout_height="494dp"
-        android:layout_marginBottom="75dp"
+        android:layout_width="413dp"
+        android:layout_height="553dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

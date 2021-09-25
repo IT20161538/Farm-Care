@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundlogin"
+    android:onClick="printHarvest"
     tools:context=".CropHarvest">
 
     <View
@@ -55,26 +56,38 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.586" />
 
-    <Button
-        android:id="@+id/btn_cropcompare"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#004A4A"
-        android:text="COMPARE"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+    <ListView
+        android:id="@+id/cropharvestlist"
+        android:layout_width="411dp"
+        android:layout_height="561dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn_cropaddnew"
+        android:id="@+id/btn_addcrpharvest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:backgroundTint="#004A4A"
-        android:text="ADD NEW"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btn_cropcompare"
+        android:text="@string/btn_addcrpharvest"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_cropprint"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_cropprint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#004A4A"
+        android:onClick="printHarvest"
+        android:text="@string/btn_cropprint"
+        app:layout_constraintBottom_toTopOf="@+id/cropharvestlist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

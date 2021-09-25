@@ -81,4 +81,41 @@ public class DBHelper2 extends SQLiteOpenHelper {
         }
         return harvest;
     }
+
+    public void deleteAnimalHarvest(int id){
+        SQLiteDatabase db = getWritableDatabase();
+        db.delete(TABLE_NAME400_1, COL_405 +" =?", new String[]{String.valueOf(id)});
+        db.close();
+    }
+
+    public AnimalHarvestMethods getSelectData(int id){
+        SQLiteDatabase db = getWritableDatabase();
+
+        Cursor cursor = db.query(TABLE_NAME400_1, new String[]{COL_405, COL_400, COL_401, COL_402, COL_403, COL_404}, COL_405 + " =?", new String[]{String.valueOf(id)}, null, null, null);
+
+        AnimalHarvestMethods method2;
+        if(cursor != null){
+            cursor.moveToFirst();
+            method2 = new AnimalHarvestMethods(cursor.getInt(0), cursor.getString(1), cursor.getString(2), cursor.getString(3), cursor.getString(4), cursor.getString(5));
+            return method2;
+        }
+        return null;
+    }
+
+    public int updateAnimalHarvest(AnimalHarvestMethods meth){
+        SQLiteDatabase db = getWritableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(COL_400, meth.getaType());
+        contentValues.put(COL_401, meth.getpType());
+        contentValues.put(COL_402, meth.getaSection());
+        contentValues.put(COL_403, meth.getaDate());
+        contentValues.put(COL_404, meth.getaAmount());
+
+        int status = db.update(TABLE_NAME400_1, contentValues, COL_405 +" =?", new String[]{String.valueOf(meth.getId())});
+
+        db.close();
+
+        return status;
+    }
 }

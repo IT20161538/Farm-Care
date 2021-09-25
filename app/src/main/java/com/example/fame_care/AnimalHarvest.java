@@ -1,13 +1,17 @@
 package com.example.fame_care;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,6 +44,36 @@ public class AnimalHarvest extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 addAnimalHarvest();
+                Toast.makeText(AnimalHarvest.this, "Please Wait!", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        aniharvestlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                AnimalHarvestMethods methods = aharvestlist.get(position);
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                builder.setTitle("Animal Harvest");
+                builder.setMessage("Select Actions");
+                builder.setNeutralButton("Update", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(AnimalHarvest.this, "Please Wait!", Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(context, EditAnimalHarvest.class);
+                        intent.putExtra("id", String.valueOf(methods.getId()));
+                        startActivity(intent);
+                    }
+                });
+                builder.setNegativeButton("Delete", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dbHelper2.deleteAnimalHarvest(methods.getId());
+                        Toast.makeText(AnimalHarvest.this, "Record Deleted!", Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(context, AnimalHarvest.class));
+                    }
+                });
+                builder.show();
             }
         });
     }
@@ -47,4 +81,5 @@ public class AnimalHarvest extends AppCompatActivity {
         Intent intent = new Intent(this, AddAnimalHarvest.class);
         startActivity(intent);
     }
+
 }

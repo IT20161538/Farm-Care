@@ -77,4 +77,14 @@
     <string name="btn_calculate">CALCULATE</string>
     <string name="btn_addsalary">ADD SALARY</string>
     <string name="btn_viewsalarydetails">VIEW SALARY DETAILS</string>
+    <string name="btn_addcrpharvest">Add New</string>
+    <string name="signinlabel">Do not have an account?</string>
+    <string name="signuplabel">Sign Up</string>
+    <string name="et_compareamount2" />
+    <string name="tv_comparevalue">Unit Price in Market</string>
+    <string name="tv_grossincome">Gross Income</string>
+    <string name="et_grossincome" />
+    <string name="btn_percentage">Percentage</string>
+    <string name="btn_cropprint">Print Record</string>
+    <string name="empty_value">Please Enter Intger Value</string>
 </resources>

@@ -31,12 +31,16 @@ public class AddAnimalHarvest extends AppCompatActivity {
 
         addAniHarvest();
 
-        /*anitype.setText("");
-        protype.setText("");
-        section.setText("");
-        date.setText("");
-        amount.setText("");
-        anitype.requestFocus();*/
+        clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                anitype.setText("");
+                protype.setText("");
+                section.setText("");
+                date.setText("");
+                amount.setText("");
+            }
+        });
 
     }
 
