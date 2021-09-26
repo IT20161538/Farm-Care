@@ -73,6 +73,26 @@
         <activity
             android:name=".EmployeeManagement"
             android:exported="true" />
+
+        <activity
+            android:name=".activity_update_crop"
+            android:exported="true" />
+        <activity
+            android:name=".activity_crop"
+            android:exported="true" />
+        <activity
+            android:name=".activity_animal1"
+            android:exported="true" />
+        <activity
+            android:name=".activity_selling1"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity_add_animal1"
+            android:exported="true" />
+        <activity
+            android:name=".activity_add_crop"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:elevation="6dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/list_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:text="Name1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black"></TextView>
+
+            <TextView
+                android:id="@+id/list_harvest1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/list_name1"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:text="Harvest1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/black"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5">
+
+            <TextView
+                android:id="@+id/list_order1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:text="order1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black"></TextView>
+
+            <TextView
+                android:id="@+id/list_remainder1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/list_order1"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:text="Remainder1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/black"></TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6">
+
+            <TextView
+                android:id="@+id/list_price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:text="Unit price1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black"></TextView>
+
+            <TextView
+                android:id="@+id/list_date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list_price1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="31dp"
+                android:padding="5dp"
+                android:text="Pickup date1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/black"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".2">
+
+            <ImageView
+                android:id="@+id/edlList"
+                android:layout_width="30dp"
+                android:layout_height="31dp"
+                android:layout_centerVertical="true"
+                android:background="#FFFFFF"
+                android:contentDescription="xxx"
+                app:srcCompat="@drawable/de" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".2">
+
+            <ImageView
+                android:id="@+id/delList"
+                android:layout_width="30dp"
+                android:layout_height="31dp"
+                android:layout_centerInParent="true"
+                android:background="#FFFFFF"
+                android:contentDescription="www"
+                app:srcCompat="@drawable/images" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

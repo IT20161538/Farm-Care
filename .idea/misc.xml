@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ASUS-USER/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_add_animal1.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ASUS-USER/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_add_crop.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ASUS-USER/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_animal1.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ASUS-USER/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_crop.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ASUS-USER/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_selling1.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ASUS-USER/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_update_crop.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ASUS-USER/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/single_item.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ASUS-USER/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/single_item1.xml" value="0.1598731884057971" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/drawable/ic_home.xml" value="0.1076388888888889" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_add_animal_harvest.xml" value="0.190625" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_add_crop_harvest.xml" value="0.1875" />

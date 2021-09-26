@@ -124,4 +124,179 @@
     <string name="et_sendcontactnodata" />
     <string name="et_sendmessagedata" />
 
+
+
+
+
+
+
+    <string name="tv_selling">Selling</string>
+    <string name="tv_animal">Animal</string>
+    <string name="btn_animal">Animal</string>
+    <string name="btn_crops">Crops</string>
+
+    <string name="et_id" />
+
+
+    <string name="tv_acname">Company</string>
+    <string name="tv_apdate">Pickup</string>
+    <string name="tv_aup">Uniit Price</string>
+
+    <string name="et_aharvest" />
+
+
+    <string name="et_acname" />
+    <string name="et_apdate" />
+    <string name="et_aup" />
+    <string name="btn_acalculate">Income</string>
+    <string name="tv_acalculate" />
+    <string name="btn_add">Add</string>
+
+    <string name="btn_cadd">Add</string>
+    <string name="tv_cid" />
+    <string name="tv_cid1">Product ID</string>
+    <string name="et_cid" />
+
+
+    <string name="tv_corder" />
+
+    <string name="et_corder" />
+
+    <string name="tv_ccname">Company</string>
+    <string name="et_ccname" />
+    <string name="tv_cpdate" />
+    <string name="tv_cpdate1">Pickup</string>
+    <string name="et_cpdate" />
+    <string name="tv_cup">Unit Price</string>
+    <string name="et_cup" />
+    <string name="btn_ccalculate">Income</string>
+    <string name="tv_ccalculate" />
+    <string name="tv_add_animal_food">Add Animal Food</string>
+    <string name="btn_fadd">Add</string>
+
+
+    <string name="tv_aftype">Food Type</string>
+    <string name="et_aftype" />
+
+
+    <string name="btn_fertilizer_add">Add</string>
+
+    <string name="tv_fdate">Date</string>
+    <string name="et_fdate" />
+    <string name="tv_ftype">Type</string>
+    <string name="et_ftype" />
+    <string name="tv_fland">Land Size(m^2)</string>
+    <string name="et_fland" />
+    <string name="tv_fertilizer_type">Fertilizer Type</string>
+    <string name="et_fertlizer_type" />
+    <string name="tv_fquantity">Quantity</string>
+    <string name="et_fquantity" />
+    <string name="tv_fsupplier">Supplier</string>
+    <string name="et_fsupplier" />
+    <string name="tv_funitp">Unit Price</string>
+    <string name="et_funitp" />
+    <string name="btn_fcost">Cost</string>
+    <string name="tv_fcost" />
+    <string name="tv_aid">Product ID</string>
+
+    <string name="tv_fsection">Section</string>
+    <string name="et_fsection" />
+    <string name="tv_add_animal">Add Animal</string>
+    <string name="tv_add_fertilizer">Add Fertilizer</string>
+    <string name="btn_add_animal">Add</string>
+    <string name="et_aid" />
+    <string name="tv_aname">Name</string>
+    <string name="et_aname" />
+    <string name="tv_aharvest">Harvest</string>
+    <string name="et_eharvest" />
+    <string name="tv_aorder">Order</string>
+    <string name="et_aorder" />
+    <string name="tv_aremainder">Remainder</string>
+    <string name="et_aremainder" />
+    <string name="tv_acompany">Company</string>
+    <string name="et_acompany" />
+    <string name="tv_apick_date">Pickup Date</string>
+    <string name="et_apickup_date" />
+    <string name="tv_aunit_price">Unit Price</string>
+    <string name="et_aunit_price" />
+    <string name="btn_aincome">Income</string>
+    <string name="tv_aincome" />
+    <string name="tv_add_crop">Add Crop</string>
+    <string name="btn_add_crop">Add</string>
+    <string name="tv_cid2">Product ID</string>
+    <string name="et_cid2" />
+    <string name="tv_cname">Name</string>
+    <string name="et_cname" />
+    <string name="tv_charvest">Harvest</string>
+    <string name="et_charvest" />
+    <string name="tv_corder1">Order</string>
+    <string name="et_corder1" />
+    <string name="tv_cremainder">Remainder</string>
+    <string name="et_cremainder" />
+    <string name="tv_ccopmpany">Company</string>
+    <string name="et_ccompany" />
+    <string name="tv_cpickup_date">Pickup Date</string>
+    <string name="et_cpickup_date" />
+    <string name="tv_cunitp">Unit Price</string>
+    <string name="et_cunitp" />
+    <string name="btn_cincome">Income</string>
+    <string name="tv_cincome" />
+    <string name="et_apick_date" />
+    <string name="tv_add_animalfood">Add Animal Food</string>
+    <string name="btn_add_animalfood">Add</string>
+    <string name="tv_asection">Section</string>
+    <string name="et_asection" />
+    <string name="tv_adate">Date</string>
+    <string name="et_adate" />
+
+    <string name="tv_atype">Type</string>
+    <string name="et_atype" />
+    <string name="tv_aage">Age</string>
+    <string name="et_aage" />
+    <string name="tv_afood_type">Food Type</string>
+    <string name="et_afood_type" />
+    <string name="tv_aquantity">Quantity</string>
+    <string name="et_aquantity" />
+    <string name="tv_asupplier">Supplier</string>
+    <string name="et_asupplier" />
+    <string name="tv_aunitp">Unit Price</string>
+    <string name="et_aunitp" />
+    <string name="btn_acost">Cost</string>
+    <string name="tv_acost" />
+    <string name="btn_animal1">Animal</string>
+    <string name="btn_crop1">Crops</string>
+    <string name="btn_addnewanimal">Add New</string>
+    <string name="btn_add_new_crop">Add</string>
+    <string name="btn_add_new_animals">Add</string>
+    <string name="btn_add_new__animals1">Add</string>
+    <string name="btn_animal2">Animal</string>
+
+    <string name="btn_view_all">View</string>
+    <string name="btn_view_all2">View</string>
+    <string name="et_animal_income" />
+    <string name="et_cincome" />
+    <string name="tv_croporder">Order</string>
+    <string name="et_croporder" />
+    <string name="tv_cropup">Unit Price</string>
+    <string name="et_cropup" />
+    <string name="btn_cropincome">Income</string>
+    <string name="et_cropincome" />
+    <string name="et_crop_unitp" />
+    <string name="tv_update_crop">Update Crop</string>
+    <string name="btn_update_crop">Update</string>
+    <string name="tv_cname_update">Name</string>
+    <string name="et_cname_update" />
+    <string name="tv_charvest_update">Harvest</string>
+    <string name="et_charvest_update" />
+    <string name="tv_croporder_update">Order</string>
+    <string name="et_croporder_update" />
+    <string name="tv_cremainder_update">Remainder</string>
+    <string name="et_cremainder_update" />
+    <string name="tv_ccopmpany_update">Company</string>
+    <string name="et_ccompany_update" />
+    <string name="tv_cpickup_date_update">Pickup Date</string>
+    <string name="et_cpickup_date_update" />
+    <string name="tv_cropup_update">Unit Price</string>
+    <string name="et_crop_unitp_update" />
+
 </resources>
