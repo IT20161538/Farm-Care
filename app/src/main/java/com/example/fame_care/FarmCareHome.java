@@ -10,6 +10,9 @@ import android.widget.Button;
 public class FarmCareHome extends AppCompatActivity {
 
     private Button btnharvest;
+    private Button Selling;
+
+    private Button employee;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +27,36 @@ public class FarmCareHome extends AppCompatActivity {
                 loadHarvestHome();
             }
         });
+        Selling= (Button)findViewById(R.id.btn_selling);
+        Selling.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){openactivity_selling();}
+
+        });
     }
     public void loadHarvestHome(){
         Intent intent = new Intent(this, Harvest_Home.class);
         startActivity(intent);
+
+        employee = (Button) findViewById(R.id.btn_employee);
+
+        employee.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openEmployeeManagementHomePage();
+            }
+        });
     }
+
+    public void openEmployeeManagementHomePage(){
+        Intent intent = new Intent(this, EmployeeManagement.class);
+        startActivity(intent);
+    }
+
+    public void openactivity_selling(){
+        Intent intent = new Intent(this,activity_selling1.class);
+        startActivity(intent);
+    }
+
+
 }

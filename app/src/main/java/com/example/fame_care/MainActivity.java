@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                boolean var = DB.registerUser(name.getText().toString(), email.getText().toString(), phone.getText().toString(), location.getText().toString(), un.getText().toString(), pw.getText().toString());
+                boolean var = DB.register(name.getText().toString(), email.getText().toString(), phone.getText().toString(), location.getText().toString(), un.getText().toString(), pw.getText().toString());
 
                 if(var){
                     Toast.makeText(MainActivity.this, "Registration Success!", Toast.LENGTH_LONG).show();

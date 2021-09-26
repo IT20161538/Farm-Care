@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundlogin"
+    tools:context=".activity_add_animal1">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.635"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <ImageView
+        android:id="@+id/im_userprofile"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_add_animal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/userprofile2"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toStartOf="@+id/tv_add_animal"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_home"
+        tools:ignore="ImageContrastCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_add_animal"
+        android:layout_width="176dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="20dp"
+        android:background="#018786"
+        android:text="@string/tv_add_animal"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@id/im_userprofile"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="@id/imageView12"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_aname"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/tv_aname"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_aharvest"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_aharvest"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/tv_aharvest"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_aorder"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_aorder"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="19dp"
+        android:text="@string/tv_aorder"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_aremainder"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_aremainder"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="17dp"
+        android:text="@string/tv_aremainder"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_acompany"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_acompany"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="9dp"
+        android:text="@string/tv_acompany"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_apick_date"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_apick_date"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/tv_apick_date"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_aunit_price"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_aunit_price"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/tv_aunit_price"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_aincome"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_aname"
+        android:layout_width="197dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/et_aname"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_eharvest"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/et_eharvest"
+        android:layout_width="197dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/et_eharvest"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_aorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/et_aorder"
+        android:layout_width="197dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/et_aorder"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_aremainder"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/et_aremainder"
+        android:layout_width="197dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/et_aremainder"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_acompany"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/et_acompany"
+        android:layout_width="197dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/et_acompany"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_apick_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/et_apick_date"
+        android:layout_width="197dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/et_apick_date"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_aunit_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/et_aunit_price"
+        android:layout_width="197dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/et_aunit_price"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_animal_income"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_aincome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="@string/btn_aincome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_add_animal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="42dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="@string/btn_add_animal"
+        app:layout_constraintEnd_toStartOf="@+id/btn_view_all2"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <Button
+        android:id="@+id/btn_view_all2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="@string/btn_view_all2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <EditText
+        android:id="@+id/et_animal_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/et_animal_income"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

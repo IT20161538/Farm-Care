@@ -5,6 +5,10 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,6 +16,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Fame_Care">
+        <activity
+            android:name=".SendMessage"
+            android:exported="true" />
+        <activity
+            android:name=".EmployeeSalaryDisplay"
+            android:exported="true" />
+        <activity
+            android:name=".EditEmployeeDetails"
+            android:exported="true" />
+        <activity
+            android:name=".WorkScheduleDetails"
+            android:exported="true" />
         <activity
             android:name=".CropHarvestCompare"
             android:exported="true" />
@@ -56,6 +72,26 @@
             android:exported="true" />
         <activity
             android:name=".EmployeeManagement"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity_update_crop"
+            android:exported="true" />
+        <activity
+            android:name=".activity_crop"
+            android:exported="true" />
+        <activity
+            android:name=".activity_animal1"
+            android:exported="true" />
+        <activity
+            android:name=".activity_selling1"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity_add_animal1"
+            android:exported="true" />
+        <activity
+            android:name=".activity_add_crop"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

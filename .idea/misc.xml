@@ -3,24 +3,40 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Admin PC/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_add_animal_harvest.xml" value="0.16" />
-        <entry key="..\:/Users/Admin PC/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_add_crop_harvest.xml" value="0.153125" />
-        <entry key="..\:/Users/Admin PC/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_add_employee_details.xml" value="0.153125" />
-        <entry key="..\:/Users/Admin PC/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_add_employee_salary.xml" value="0.153125" />
-        <entry key="..\:/Users/Admin PC/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_add_work_schedule.xml" value="0.153125" />
-        <entry key="..\:/Users/Admin PC/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_animal_harvest.xml" value="0.18" />
-        <entry key="..\:/Users/Admin PC/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_crop_harvest.xml" value="0.2" />
-        <entry key="..\:/Users/Admin PC/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_crop_harvest_compare.xml" value="0.25" />
-        <entry key="..\:/Users/Admin PC/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_edit_animal_harvest.xml" value="0.153125" />
-        <entry key="..\:/Users/Admin PC/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_edit_crop_harvest.xml" value="0.153125" />
-        <entry key="..\:/Users/Admin PC/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_employee_management.xml" value="0.22" />
-        <entry key="..\:/Users/Admin PC/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_farm_care_home.xml" value="0.153125" />
-        <entry key="..\:/Users/Admin PC/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_harvest_home.xml" value="0.2" />
-        <entry key="..\:/Users/Admin PC/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/Admin PC/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_main2.xml" value="0.18" />
-        <entry key="..\:/Users/Admin PC/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_user_login.xml" value="0.18" />
-        <entry key="..\:/Users/Admin PC/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/animal_harvest_view.xml" value="0.25" />
-        <entry key="..\:/Users/Admin PC/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/crop_harvest_view.xml" value="0.22" />
+        <entry key="..\:/Users/ASUS-USER/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_add_animal1.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ASUS-USER/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_add_crop.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ASUS-USER/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_animal1.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ASUS-USER/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_crop.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ASUS-USER/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_selling1.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ASUS-USER/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/activity_update_crop.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ASUS-USER/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/single_item.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ASUS-USER/AndroidStudioProjects/Farm-Care/app/src/main/res/layout/single_item1.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/drawable/ic_home.xml" value="0.1076388888888889" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_add_animal_harvest.xml" value="0.190625" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_add_crop_harvest.xml" value="0.1875" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_add_employee_details.xml" value="0.2" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_add_employee_salary.xml" value="0.2" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_add_work_schedule.xml" value="0.2" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_animal_harvest.xml" value="0.190625" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_crop_harvest.xml" value="0.190625" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_crop_harvest_compare.xml" value="0.1875" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_edit_animal_harvest.xml" value="0.1875" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_edit_crop_harvest.xml" value="0.1875" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_edit_employee_details.xml" value="0.190625" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_employee_details.xml" value="0.2" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_employee_management.xml" value="0.2" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_employee_salary_display.xml" value="0.2" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_farm_care_home.xml" value="0.2" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_harvest_home.xml" value="0.190625" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_send_message.xml" value="0.190625" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_user_login.xml" value="0.2" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/activity_work_schedule_details.xml" value="0.2" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/animal_harvest_view.xml" value="0.190625" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/crop_harvest_view.xml" value="0.1875" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/employee_details_view.xml" value="0.190625" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/salary_details_view.xml" value="0.190625" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Farm Care/app/src/main/res/layout/work_schedule_view.xml" value="0.2" />
         <entry key="..\:/Users/Asus/Fame_Care/app/src/main/res/drawable/ic_user.xml" value="0.1" />
         <entry key="..\:/Users/Asus/Fame_Care/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Asus/Farm Care/app/src/main/res/layout/activity_main.xml" value="0.190625" />
