@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundlogin"
+    tools:context=".activity_add_crop">
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.635"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <ImageView
+        android:id="@+id/im_userprofile"
+        android:layout_width="46dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_add_crop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/userprofile2"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="66dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="7dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toStartOf="@+id/tv_add_crop"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_home"
+        tools:ignore="ImageContrastCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_add_crop"
+        android:layout_width="176dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="20dp"
+        android:background="#018786"
+        android:text="@string/tv_add_crop"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_cname"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="9dp"
+        android:text="@string/tv_cname"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_charvest"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_charvest"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="19dp"
+        android:text="@string/tv_charvest"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_croporder"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_croporder"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/tv_croporder"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_cremainder"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_cremainder"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/tv_cremainder"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_ccopmpany"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_ccopmpany"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="9dp"
+        android:text="@string/tv_ccopmpany"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_cpickup_date"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_cpickup_date"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/tv_cpickup_date"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_cropup"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_cropup"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/tv_cropup"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cropincome"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_cname"
+        android:layout_width="197dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/et_cname"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_charvest"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/et_charvest"
+        android:layout_width="197dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/et_charvest"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_croporder"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/et_croporder"
+        android:layout_width="197dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/et_croporder"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_cremainder"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/et_cremainder"
+        android:layout_width="197dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/et_cremainder"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_ccompany"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/et_ccompany"
+        android:layout_width="197dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/et_ccompany"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_cpickup_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/et_cpickup_date"
+        android:layout_width="197dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/et_cpickup_date"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_crop_unitp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_cropincome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="@string/btn_cropincome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_add_crop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="42dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="@string/btn_add_crop"
+        app:layout_constraintEnd_toStartOf="@+id/btn_view_all"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <Button
+        android:id="@+id/btn_view_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="@string/btn_view_all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <EditText
+        android:id="@+id/et_cropincome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/et_cropincome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/et_crop_unitp"
+        android:layout_width="184dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/et_crop_unitp"
+        app:layout_constraintBottom_toTopOf="@+id/et_cropincome"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
