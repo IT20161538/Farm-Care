@@ -2,14 +2,13 @@ package com.example.fame_care;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
 public class FarmCareHome extends AppCompatActivity {
 
     private Button btnharvest;
+
+    private Button employee;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +26,20 @@ public class FarmCareHome extends AppCompatActivity {
     }
     public void loadHarvestHome(){
         Intent intent = new Intent(this, Harvest_Home.class);
+        startActivity(intent);
+
+        employee = (Button) findViewById(R.id.btn_employee);
+
+        employee.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openEmployeeManagementHomePage();
+            }
+        });
+    }
+
+    public void openEmployeeManagementHomePage(){
+        Intent intent = new Intent(this, EmployeeManagement.class);
         startActivity(intent);
     }
 }
