@@ -10,6 +10,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -21,6 +22,7 @@ public class EmployeeSalaryDisplay extends AppCompatActivity {
     Context context;
     DBHelper7 DB;
     private List<SalaryModelClass> salaryModelClasses;
+    ImageView imageView3;
 
 
     @Override
@@ -28,6 +30,7 @@ public class EmployeeSalaryDisplay extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee_salary_display);
 
+        imageView3= (ImageView) findViewById(R.id.imageView3);
         salarydetailsList  = findViewById(R.id.salarydetailsList);
         context = this;
         DB = new DBHelper7(context);
@@ -62,7 +65,19 @@ public class EmployeeSalaryDisplay extends AppCompatActivity {
             }
 
         });
+
+        imageView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openHomePage();
+            }
+        });
     }
 
+
+    public void openHomePage(){
+        Intent intent = new Intent(this,FarmCareHome.class);
+        startActivity(intent);
+    }
 
 }

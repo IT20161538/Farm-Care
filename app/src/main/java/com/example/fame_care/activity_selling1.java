@@ -6,16 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class activity_selling1 extends AppCompatActivity{
 
     private Button Animal;
     private Button Crops;
+    //ImageView imageView12;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selling1);
+        //imageView12= (ImageView) findViewById(R.id.imageView12 );
 
 
         Crops= (Button)findViewById(R.id.btn_crop1);
@@ -31,6 +34,7 @@ public class activity_selling1 extends AppCompatActivity{
             public void onClick(View v){openactivity_animal();}
 
         });
+
     }
 
     public void openactivity_crop(){

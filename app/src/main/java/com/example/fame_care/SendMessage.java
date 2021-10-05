@@ -12,6 +12,7 @@ import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class SendMessage extends AppCompatActivity {
@@ -20,6 +21,7 @@ public class SendMessage extends AppCompatActivity {
     private EditText contactno,message;
     private DBHelper9 DB;
     private Context context;
+    ImageView imageView3;
 
 
     @Override
@@ -30,6 +32,7 @@ public class SendMessage extends AppCompatActivity {
         context = this;
         DB = new DBHelper9(context);
 
+        imageView3= (ImageView) findViewById(R.id.imageView3);
         contactno = findViewById(R.id.et_sendcontactnodata);
         message = findViewById(R.id.et_sendmessagedata);
         btn_send = (Button) findViewById(R.id.btn_send);
@@ -40,6 +43,13 @@ public class SendMessage extends AppCompatActivity {
         contactno.setText(employeeModelClass.getContactno());
 
         ActivityCompat.requestPermissions(SendMessage.this, new String[]{Manifest.permission.SEND_SMS, Manifest.permission.READ_SMS}, PackageManager.PERMISSION_GRANTED);
+
+        imageView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openHomePage();
+            }
+        });
 
     }
 
@@ -56,5 +66,10 @@ public class SendMessage extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "SMS Sent Error", Toast.LENGTH_LONG).show();
 
         }
+    }
+
+    public void openHomePage(){
+        Intent intent = new Intent(this,FarmCareHome.class);
+        startActivity(intent);
     }
 }

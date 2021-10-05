@@ -43,6 +43,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        signin .setOnClickListener(v -> {
+            if( name.length() == 0 ||  email.length() == 0 ||phone  .length() == 0 || location .length() == 0 ||   un .length() == 0||pw.length() == 0){
+                Toast.makeText(this, "Please fill the missing fields!", Toast.LENGTH_LONG).show();
+            }
+            else if(!name.getText().toString().matches("[a-z,' ',A-Z]*")){
+               name.setError("Enter Only Characters!");
+           }
+            else if(!phone.getText().toString().matches("[0-9]{10}")){
+                phone.setError("Enter Only 10 Digit Mobile Number");
+            }
+            else if(!email.getText().toString().matches("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$")){
+                email.setError("Enter a Valid Email Address");
+            }
+
+            else{
+                registerUser();
+            }
+        });
+
     }
 
     private void registerUser(){
