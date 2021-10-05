@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -23,12 +24,14 @@ public class WorkScheduleDetails extends AppCompatActivity {
     Context context;
     DBHelper8 DB;
     private List<WorkSceduleModelClass> workSceduleModelClasses;
+    ImageView imageView3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_work_schedule_details);
 
+        imageView3= (ImageView) findViewById(R.id.imageView3);
         workscheduleList  = findViewById(R.id.workscheduleList);
         context = this;
         DB = new DBHelper8(context);
@@ -64,7 +67,17 @@ public class WorkScheduleDetails extends AppCompatActivity {
             }
         });
 
+        imageView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openHomePage();
+            }
+        });
 
+    }
 
+    public void openHomePage(){
+        Intent intent = new Intent(this,FarmCareHome.class);
+        startActivity(intent);
     }
 }

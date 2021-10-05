@@ -36,6 +36,15 @@ public class FarmCareHome extends AppCompatActivity {
 
         });
 
+        employee = (Button) findViewById(R.id.btn_employee);
+
+        employee.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openEmployeeManagementHomePage();
+            }
+        });
+
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,19 +65,14 @@ public class FarmCareHome extends AppCompatActivity {
         Intent intent = new Intent(this, Harvest_Home.class);
         startActivity(intent);
 
-        employee = (Button) findViewById(R.id.btn_employee);
 
-        employee.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openEmployeeManagementHomePage();
-            }
-        });
     }
+
 
     public void openEmployeeManagementHomePage(){
         Intent intent = new Intent(this, EmployeeManagement.class);
         startActivity(intent);
+
     }
 
     public void openactivity_selling(){
