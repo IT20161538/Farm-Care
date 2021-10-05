@@ -10,7 +10,8 @@ import android.widget.Button;
 public class FarmCareHome extends AppCompatActivity {
 
     private Button btnharvest;
-    private Button Selling;
+    private Button Selling, logout;
+    private Button management;
 
     private Button employee;
 
@@ -20,6 +21,7 @@ public class FarmCareHome extends AppCompatActivity {
         setContentView(R.layout.activity_farm_care_home);
 
         btnharvest = findViewById(R.id.btn_harvest);
+        logout = findViewById(R.id.btn_logout);
 
         btnharvest.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +34,22 @@ public class FarmCareHome extends AppCompatActivity {
             @Override
             public void onClick(View v){openactivity_selling();}
 
+        });
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FarmCareHome.this, UserLogin.class);
+                startActivity(intent);
+
+            }
+        });
+
+        management = findViewById(R.id.btn_management);
+
+        management.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { openAnimalCropHomePage();}
         });
     }
     public void loadHarvestHome(){
@@ -58,5 +76,13 @@ public class FarmCareHome extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+
+
+    public void openAnimalCropHomePage(){
+        Intent intent = new Intent(this,AnimalCrop_Home.class);
+        startActivity(intent);
+
+    }
 
 }

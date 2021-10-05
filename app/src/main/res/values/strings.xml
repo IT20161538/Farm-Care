@@ -298,5 +298,74 @@
     <string name="et_cpickup_date_update" />
     <string name="tv_cropup_update">Unit Price</string>
     <string name="et_crop_unitp_update" />
+    <string name="btn_clear_crop">Clear</string>
+    <string name="btn_clear_animal">Clear</string>
+    <string name="btn_logout">Log Out</string>
+
+
+
+
+
+    <string name="tv_animalCrop"><![CDATA[Animal & Crop Management]]></string>
+    <string name="btn_animalm">Animal</string>
+
+    <string name="btn_crop">Crop</string>
+    <string name="btn_taskmanage">Task Management</string>
+    <string name="tv_topicCrop">Crops</string>
+    <string name="tv_sectioncrop">Section</string>
+    <string name="pt_sectioncrop" />
+    <string name="tv_croptype">Crop Type</string>
+    <string name="pt_croptype" />
+    <string name="tv_lpd">Last Pesticide Date</string>
+    <string name="pt_lpd" />
+    <string name="tv_dpd">Due Pesticide Date</string>
+    <string name="pt_dpd" />
+    <string name="btn_cropAdd">Add</string>
+    <string name="btn_cropView">View</string>
+    <string name="tv_topicAnimal">Animals</string>
+    <string name="tv_animalSection">Section</string>
+    <string name="pt_animalSection" />
+    <string name="tv_animalType">Type</string>
+    <string name="pt_animalType" />
+    <string name="tv_dob">Date of Birth</string>
+    <string name="tv_lvd">Last vaccinated Date</string>
+    <string name="pt_dob" />
+    <string name="pt_lvd" />
+    <string name="tv_dvd">Due Vaccinated Date</string>
+    <string name="pt_dvd" />
+    <string name="tv_age">Age(years)</string>
+    <string name="pt_age" />
+    <string name="btn_calc_age">Calculate</string>
+    <string name="btn_Animaladd">Add</string>
+    <string name="btn_Animalview">View</string>
+    <string name="pt_section" />
+    <string name="tv_viewcrop_topic">Crops</string>
+    <string name="btn_newaddcrop">Add New</string>
+    <string name="tv_viewanimalTopic">Animals</string>
+    <string name="btn_newaddAnimal">create new</string>
+    <string name="single_viewCrop_section" />
+    <string name="btn_editCropM">Edit</string>
+    <string name="btn_deleteCropM">Delete</string>
+    <string name="tv_editCropmanage">Edit Crop</string>
+    <string name="pt_editSectionCrop" />
+    <string name="pt_editCroptype" />
+    <string name="pt_editcroplpd" />
+    <string name="pt_editcropdpd" />
+    <string name="single_viewAnimal_section">Section</string>
+    <string name="single_viewAnimal_type">Type</string>
+    <string name="single_viewAnimal_dob">Date of Birth</string>
+    <string name="single_viewAnimal_lvd">Last Vaccinated Date</string>
+    <string name="single_viewAnimal_dvd">Due Vaccinated Date</string>
+    <string name="single_viewAnimal_age">Age</string>
+    <string name="topic_editAnimalM">Edit Animals</string>
+    <string name="pt_editAnimal_section" />
+    <string name="pt_editAnimal_type" />
+    <string name="pt_editAnimal_dob" />
+    <string name="pt_editAnimal_lvd" />
+    <string name="pt_editAnimal_dvd" />
+    <string name="pt_editAnimal_age" />
+    <string name="btn_editAnimalM">Edit</string>
+    <string name="Invalid_section">Please Enter  valid section</string>
+
 
 </resources>

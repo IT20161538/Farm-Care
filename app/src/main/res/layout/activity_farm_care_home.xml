@@ -55,45 +55,32 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_farmcare" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="402dp"
-        android:layout_height="217dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
-        app:srcCompat="@drawable/map" />
-
-    <ImageView
         android:id="@+id/imageView8"
         android:layout_width="118dp"
         android:layout_height="126dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="90dp"
         android:background="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/imageView9"
-        app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
         app:srcCompat="@drawable/harvest" />
 
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="118dp"
         android:layout_height="126dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="56dp"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/btn_logout"
         app:srcCompat="@drawable/trade" />
 
     <Button
         android:id="@+id/btn_harvest"
         android:layout_width="119dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/teal_700"
         android:text="HARVEST"
@@ -106,7 +93,7 @@
         android:layout_width="113dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginEnd="56dp"
         android:backgroundTint="@color/teal_700"
         android:text="SELLING"
         android:textSize="16sp"
@@ -117,11 +104,9 @@
         android:id="@+id/imageView10"
         android:layout_width="118dp"
         android:layout_height="126dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="32dp"
         android:background="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/imageView11"
-        app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_harvest"
         app:srcCompat="@drawable/farm" />
@@ -130,7 +115,7 @@
         android:id="@+id/btn_management"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/teal_700"
         android:text="MANAGEMENT"
@@ -142,8 +127,8 @@
         android:id="@+id/imageView11"
         android:layout_width="118dp"
         android:layout_height="126dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="56dp"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_selling"
@@ -154,11 +139,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginEnd="56dp"
         android:backgroundTint="@color/teal_700"
         android:text="EMPLOYEE"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="21dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="@string/btn_logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

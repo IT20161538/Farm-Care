@@ -94,6 +94,29 @@
             android:name=".activity_add_crop"
             android:exported="true" />
         <activity
+            android:name=".EditAnimalManage"
+            android:exported="true" />
+        <activity
+            android:name=".EditCropManage"
+            android:exported="true" />
+        <activity
+            android:name=".AnimalManage_view"
+            android:exported="true" />
+        <activity
+            android:name=".Crops_view"
+            android:exported="true" />
+
+        <activity
+            android:name=".AddAnimalVacc_Detail"
+            android:exported="true" />
+        <activity
+            android:name=".AddCropManage"
+            android:exported="true" />
+        <activity
+            android:name=".AnimalCrop_Home"
+            android:exported="true" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
