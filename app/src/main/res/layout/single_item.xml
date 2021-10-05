@@ -112,7 +112,7 @@
                 android:layout_centerVertical="true"
                 android:background="#FFFFFF"
                 android:contentDescription="xxx"
-                app:srcCompat="@drawable/de" />
+                app:srcCompat="@drawable/images" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -127,7 +127,7 @@
                 android:layout_centerInParent="true"
                 android:background="#FFFFFF"
                 android:contentDescription="www"
-                app:srcCompat="@drawable/images" />
+                app:srcCompat="@drawable/de" />
         </RelativeLayout>
 
     </LinearLayout>

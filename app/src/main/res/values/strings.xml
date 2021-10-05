@@ -298,6 +298,9 @@
     <string name="et_cpickup_date_update" />
     <string name="tv_cropup_update">Unit Price</string>
     <string name="et_crop_unitp_update" />
+    <string name="btn_clear_crop">Clear</string>
+    <string name="btn_clear_animal">Clear</string>
+    <string name="btn_logout">Log Out</string>
 
 
 

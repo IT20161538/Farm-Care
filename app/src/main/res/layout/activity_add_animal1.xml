@@ -22,8 +22,8 @@
 
     <ImageView
         android:id="@+id/im_userprofile"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="61dp"
+        android:layout_height="58dp"
         android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -34,8 +34,8 @@
 
     <ImageView
         android:id="@+id/imageView12"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="61dp"
+        android:layout_height="58dp"
         android:layout_marginTop="4dp"
         android:contentDescription="TODO"
         app:layout_constraintEnd_toStartOf="@+id/tv_add_animal"
@@ -248,8 +248,8 @@
         android:id="@+id/btn_add_animal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="42dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
         android:backgroundTint="@color/teal_700"
         android:text="@string/btn_add_animal"
         app:layout_constraintEnd_toStartOf="@+id/btn_view_all2"
@@ -259,8 +259,8 @@
         android:id="@+id/btn_view_all2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
         android:backgroundTint="@color/teal_700"
         android:text="@string/btn_view_all2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -279,6 +279,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_clear_animal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="@string/btn_clear_animal"
+        app:layout_constraintEnd_toStartOf="@+id/btn_add_animal"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

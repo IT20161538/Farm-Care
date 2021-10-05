@@ -9,13 +9,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class  activity_add_animal1 extends AppCompatActivity {
 
     DBHelper20 myDb;
     EditText et_aname,et_eharvest,et_aorder,et_aremainder,et_acompany,et_apick_date,et_aunit_price,et_animal_income;
-    Button btn_add_animal,btn_view_all2,btn_aincome;
+    Button btn_add_animal,btn_view_all2,btn_aincome,btn_clear_animal;
+    ImageView imageView12;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,8 @@ public class  activity_add_animal1 extends AppCompatActivity {
         setContentView(R.layout.activity_add_animal1);
         myDb = new DBHelper20(this);
 
+        imageView12= (ImageView) findViewById(R.id.imageView12 );
+        btn_clear_animal = (Button) findViewById(R.id.btn_clear_animal);
         btn_aincome = (Button) findViewById(R.id.btn_aincome );
         btn_view_all2 = (Button) findViewById(R.id.btn_view_all2);
         btn_add_animal = (Button) findViewById(R.id.btn_add_animal);
@@ -36,13 +40,45 @@ public class  activity_add_animal1 extends AppCompatActivity {
         et_animal_income=(EditText) findViewById(R.id.et_animal_income);
         AddData();
         viewAll();
+
+        btn_add_animal .setOnClickListener(v -> {
+            if( et_aname.length() == 0 || et_eharvest.length() == 0 ||et_aorder  .length() == 0 || et_aremainder.length() == 0 || et_acompany.length() == 0||et_apick_date .length() == 0||et_aunit_price .length() == 0||et_animal_income.length() == 0){
+                Toast.makeText(this, "Please fill the missing fields!", Toast.LENGTH_LONG).show();
+            }
+            else if(!et_aname.getText().toString().matches("[a-z,' ',A-Z]*")){
+                et_aname.setError("Enter Only Characters!");
+            }
+
+            else{
+                AddData();
+            }
+        });
+        imageView12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(activity_add_animal1.this,FarmCareHome.class);
+                startActivity(i);
+            }
+        });
         btn_aincome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 calculateIncome();
             }
         });
-
+        btn_clear_animal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                et_aname.setText("");
+                et_eharvest.setText("");
+                et_aorder.setText("");
+                et_aremainder.setText("");
+                et_acompany .setText("");
+                et_apick_date .setText("");
+                et_aunit_price  .setText("");
+                et_animal_income .setText("");
+            }
+        });
 
     }
 

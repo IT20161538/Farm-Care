@@ -83,7 +83,7 @@ public class cropAdapter extends RecyclerView.Adapter<cropAdapter.ViewHolder>{
                 System.out.println(myDb.toString()+"/"+ ProductID);
                 myDb.deleteData(ProductID);
 
-                Intent i = new Intent(context,activity_crop.class);
+                Intent i = new Intent(context,activity_add_crop.class);
                 context.startActivity(i);
 
             }
