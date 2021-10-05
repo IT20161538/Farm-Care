@@ -41,6 +41,66 @@ public class EditCropHarvest extends AppCompatActivity {
         camount.setText(meths.getcAmount());
         ccondition.setText(meths.getcCondition());
 
+        /*update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String ctype2 = ctype.getText().toString();
+                String csection2 = csection.getText().toString();
+                String cdate2 = cdate.getText().toString();
+                String camount2 = camount.getText().toString();
+                String cconditon2 = ccondition.getText().toString();
+
+                CropHarvestMethods meths2 = new CropHarvestMethods(Integer.parseInt(id), ctype2, csection2, cdate2, camount2, cconditon2);
+                int state = DBhelper3.updateCropHarvest(meths2);
+                Toast.makeText(EditCropHarvest.this, "Record Updated!", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(context, CropHarvest.class);
+                startActivity(intent);
+            }
+        });*/
+
+        clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ctype.setText("");
+                csection.setText("");
+                cdate.setText("");
+                camount.setText("");
+                ccondition.setText("");
+            }
+        });
+
+        update.setOnClickListener(v -> {
+            if(ctype.length() == 0 || csection.length() == 0 || cdate.length() == 0 || camount.length() == 0 || ccondition.length() == 0){
+                Toast.makeText(this, "Please fill the missing fields!", Toast.LENGTH_LONG).show();
+            }
+            else if(!ctype.getText().toString().matches("[a-z,A-Z]*")){
+                ctype.setError("Enter Only Characters!");
+            }
+            else if(!camount.getText().toString().matches("[0-9]*")){
+                camount.setError("Enter Only Characters!");
+            }
+            else{
+                update.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        String ctype2 = ctype.getText().toString();
+                        String csection2 = csection.getText().toString();
+                        String cdate2 = cdate.getText().toString();
+                        String camount2 = camount.getText().toString();
+                        String cconditon2 = ccondition.getText().toString();
+
+                        CropHarvestMethods meths2 = new CropHarvestMethods(Integer.parseInt(id), ctype2, csection2, cdate2, camount2, cconditon2);
+                        int state = DBhelper3.updateCropHarvest(meths2);
+                        Toast.makeText(EditCropHarvest.this, "Record Updated!", Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(context, CropHarvest.class);
+                        startActivity(intent);
+                    }
+                });
+            }
+        });
+    }
+
+    /*public void updateCrops(){
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,16 +117,5 @@ public class EditCropHarvest extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        clear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ctype.setText("");
-                csection.setText("");
-                cdate.setText("");
-                camount.setText("");
-                ccondition.setText("");
-            }
-        });
-    }
+    }*/
 }

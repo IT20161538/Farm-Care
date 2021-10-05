@@ -42,6 +42,21 @@ public class AddAnimalHarvest extends AppCompatActivity {
             }
         });
 
+        submit.setOnClickListener(v -> {
+            if(anitype.length() == 0 || protype.length() == 0 || section.length() == 0 || date.length() == 0 || amount.length() == 0){
+                Toast.makeText(this, "Please fill the missing fields!", Toast.LENGTH_LONG).show();
+            }
+            else if(!anitype.getText().toString().matches("[a-z,A-Z]*")){
+                anitype.setError("Enter Only Characters!");
+            }
+            else if(!amount.getText().toString().matches("[0-9]*")){
+                amount.setError("Enter Only Numbers!");
+            }
+            else{
+                addAniHarvest();
+            }
+        });
+
     }
 
     private void addAniHarvest(){

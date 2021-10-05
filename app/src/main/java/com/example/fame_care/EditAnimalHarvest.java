@@ -69,5 +69,35 @@ public class EditAnimalHarvest extends AppCompatActivity {
             }
         });
 
+        update.setOnClickListener(v -> {
+            if(anitype.length() == 0 || protype.length() == 0 || section.length() == 0 || date.length() == 0 || amount.length() == 0){
+                Toast.makeText(this, "Please fill the missing fields!", Toast.LENGTH_LONG).show();
+            }
+            else if(!anitype.getText().toString().matches("[a-z,A-Z]*")){
+                anitype.setError("Enter Only Characters!");
+            }
+            else if(!amount.getText().toString().matches("[0-9]*")){
+                amount.setError("Enter Only Numbers!");
+            }
+            else{
+                update.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        String anitype2 = anitype.getText().toString();
+                        String protype2 = protype.getText().toString();
+                        String section2 = section.getText().toString();
+                        String date2 = date.getText().toString();
+                        String amount2 = amount.getText().toString();
+
+                        AnimalHarvestMethods meths2 = new AnimalHarvestMethods(Integer.parseInt(id), anitype2, protype2, section2, date2, amount2);
+                        int state = dbHelper2.updateAnimalHarvest(meths2);
+                        Toast.makeText(EditAnimalHarvest.this, "Record Updated!", Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(context, AnimalHarvest.class);
+                        startActivity(intent);
+                    }
+                });
+            }
+        });
+
     }
 }

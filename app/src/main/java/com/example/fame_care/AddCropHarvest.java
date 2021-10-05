@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
@@ -17,6 +18,7 @@ public class AddCropHarvest extends AppCompatActivity {
     private EditText croptype, csection, cdate, camount, cconditon;
     private Button submit, clear;
     DBHelper3 DB3;
+    private ImageView imgHome;
 
     AwesomeValidation awesomeValidation;
 
@@ -32,6 +34,7 @@ public class AddCropHarvest extends AppCompatActivity {
         cconditon = findViewById(R.id.et_addcropcondition);
         submit = findViewById(R.id.btn_cropharvestadd);
         clear = findViewById(R.id.btn_cropharvestclear);
+        imgHome = findViewById(R.id.iv_home);
         DB3 = new DBHelper3(this);
 
         awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
@@ -47,6 +50,28 @@ public class AddCropHarvest extends AppCompatActivity {
                 cdate.setText("");
                 camount.setText("");
                 cconditon.setText("");
+            }
+        });
+
+        imgHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openhome();
+            }
+        });
+
+        submit.setOnClickListener(v -> {
+            if(croptype.length() == 0 || csection.length() == 0 || cdate.length() == 0 || camount.length() == 0 || cconditon.length() == 0){
+                Toast.makeText(this, "Please fill the missing fields!", Toast.LENGTH_LONG).show();
+            }
+            else if(!croptype.getText().toString().matches("[a-z,A-Z]*")){
+                croptype.setError("Enter Only Characters!");
+            }
+            else if(!camount.getText().toString().matches("[0-9]*")){
+                camount.setError("Enter Only Characters!");
+            }
+            else{
+                addcropHarvest();
             }
         });
     }
@@ -67,8 +92,15 @@ public class AddCropHarvest extends AppCompatActivity {
         });
     }
 
+
+
     public void openCropHarvestPage(){
         Intent intent = new Intent(this, CropHarvest.class);
+        startActivity(intent);
+    }
+
+    public void openhome(){
+        Intent intent = new Intent(this, FarmCareHome.class);
         startActivity(intent);
     }
 }

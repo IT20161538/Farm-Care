@@ -54,27 +54,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_animalcompare"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="#004A4A"
-        android:text="COMPARE"
-        app:layout_constraintBottom_toTopOf="@+id/animalharvest_list"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
-
-    <Button
         android:id="@+id/btn_animaladdnew"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="#004A4A"
         android:text="ADD NEW"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btn_animalcompare"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/animalharvest_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
 
     <ListView
         android:id="@+id/animalharvest_list"

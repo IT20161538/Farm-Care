@@ -3,10 +3,12 @@ package com.example.fame_care;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
@@ -17,6 +19,7 @@ public class CropHarvestCompare extends AppCompatActivity {
 
     private EditText comctype, comcamount, compercentage, comexpect;
     private Button calculate;
+    private ImageView imgHome;
     DBHelper3 db3;
 
     AwesomeValidation awesomeValidation;
@@ -32,6 +35,7 @@ public class CropHarvestCompare extends AppCompatActivity {
         compercentage = findViewById(R.id.et_grossincome);
         calculate = (Button) findViewById(R.id.btn_percentage);
         db3 = new DBHelper3(this);
+        imgHome = findViewById(R.id.iv_home);
 
         awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
         awesomeValidation.addValidation(this, R.id.et_compareamount2, "[1-9]{1}[0-9]{1}[0-9]{1}$", R.string.empty_value);
@@ -56,6 +60,13 @@ public class CropHarvestCompare extends AppCompatActivity {
             }
         });
 
+        imgHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                loadHome();
+            }
+        });
+
     }
 
     public void calculatepercentage(){
@@ -70,5 +81,10 @@ public class CropHarvestCompare extends AppCompatActivity {
         float percentage = (amount/expect)*100;
 
         compercentage.setText(String.valueOf(percentage));
+    }
+
+    public void loadHome(){
+        Intent intent = new Intent(this, FarmCareHome.class);
+        startActivity(intent);
     }
 }
