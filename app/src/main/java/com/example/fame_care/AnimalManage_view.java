@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,6 +21,7 @@ public class AnimalManage_view extends AppCompatActivity {
     private Button createNewAnimal;
     private ListView list;
     private List<AnimalManageModel> animalManageView;
+    private ImageView imageView3;
     Context context;
     DBHelper11 DB ;
 
@@ -28,11 +30,18 @@ public class AnimalManage_view extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animal_manage_view);
 
+        imageView3= (ImageView) findViewById(R.id.imageView3 );
+
         createNewAnimal = findViewById(R.id.btn_newaddAnimal);
         list = findViewById(R.id.lv_animalManage);
         animalManageView = new ArrayList<>();
         context = this;
         DB = new DBHelper11(context);
+
+        imageView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {openHomePage();}
+        });
 
         animalManageView = DB.getAllAnimalManageDetails();
 
@@ -80,6 +89,11 @@ public class AnimalManage_view extends AppCompatActivity {
 
     public void openAddAnimalManagePage(){
         Intent intent =new Intent(this,AddAnimalVacc_Detail.class);
+        startActivity(intent);
+    }
+
+    public void openHomePage(){
+        Intent intent = new Intent(this,FarmCareHome.class);
         startActivity(intent);
     }
 

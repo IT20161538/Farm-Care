@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class AnimalCrop_Home extends AppCompatActivity {
 
-    private Button animal, crop, task;
+    private Button animal, crop;
 
 
     @Override
@@ -19,7 +19,7 @@ public class AnimalCrop_Home extends AppCompatActivity {
 
         animal = (Button) findViewById(R.id.btn_animalm);
         crop = (Button) findViewById(R.id.btn_crop);
-        task = (Button) findViewById(R.id.btn_taskmanage);
+
 
         animal.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){openAddAnimalPage();}

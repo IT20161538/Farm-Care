@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,6 +21,7 @@ public class Crops_view extends AppCompatActivity {
     private Button createNewCrop;
     private ListView list;
     private List<CropManageModel> cropManages;
+    private ImageView imageView3;
     Context context;
     DBHelper10 DB ;
 
@@ -29,12 +31,19 @@ public class Crops_view extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crops_view);
 
+        imageView3= (ImageView) findViewById(R.id.imageView3 );
+
         createNewCrop = findViewById(R.id.btn_newaddcrop);
         list = findViewById(R.id.lv_cropmanage);
        // cropview =new ArrayList<>();
         cropManages = new ArrayList<>();
         context = this;
         DB = new DBHelper10(context);
+
+        imageView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {openHomePage();}
+        });
 
         cropManages =DB.getAllCropManageDetails();
         //cropview = DB.getAllCropManageDetails();
@@ -84,6 +93,11 @@ public class Crops_view extends AppCompatActivity {
 
     public void openAddCropManagePage(){
         Intent intent =new Intent(this, AddCropManage.class);
+        startActivity(intent);
+    }
+
+    public void openHomePage(){
+        Intent intent = new Intent(this,FarmCareHome.class);
         startActivity(intent);
     }
 }

@@ -100,7 +100,7 @@ public class DBHelper11 extends SQLiteOpenHelper {
     public AnimalManageModel getSingleRow(int id) {
         SQLiteDatabase db = getWritableDatabase();
 
-        Cursor cursor = db.query(TABLE_NAME11, new String[]{COL_1, COL_2, COL_3, COL_4, COL_5, COL_5, COL_6, COL_7}, COL_1 + "=?", new String[]{String.valueOf(id)},
+        Cursor cursor = db.query(TABLE_NAME11, new String[]{COL_1, COL_2, COL_3, COL_4, COL_5, COL_6, COL_7}, COL_1 + "=?", new String[]{String.valueOf(id)},
                 null, null, null);
 
         AnimalManageModel animalsModel;

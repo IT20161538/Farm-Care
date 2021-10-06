@@ -354,8 +354,8 @@
     <string name="single_viewAnimal_section">Section</string>
     <string name="single_viewAnimal_type">Type</string>
     <string name="single_viewAnimal_dob">Date of Birth</string>
-    <string name="single_viewAnimal_lvd">Last Vaccinated Date</string>
-    <string name="single_viewAnimal_dvd">Due Vaccinated Date</string>
+    <string name="single_viewAnimal_lvd">Last Vaccinated Year</string>
+    <string name="single_viewAnimal_dvd">Due Vaccinated Year</string>
     <string name="single_viewAnimal_age">Age</string>
     <string name="topic_editAnimalM">Edit Animals</string>
     <string name="pt_editAnimal_section" />
